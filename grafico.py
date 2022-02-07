@@ -11,7 +11,7 @@ covid = pd.read_csv('Dados_Covid.csv', sep = ';', encoding='latin-1')
 covid.head()
 
 
-municipios = covid.query('Município == "Piracicaba" | Município == "Guarulhos"')
+municipios = covid.query('Município == "Guarulhos" | Município == "Ribeirão Preto"  | Município == "Piracicaba"  | Município == "Bauru"  | Município == "São Carlos"')
 
 
 fig, (axis1) = plt.subplots(1, 1, figsize=(15, 5))
